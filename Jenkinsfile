@@ -1,6 +1,6 @@
 pipeline {
     
-    agent { label 'master' }
+    agent any
 
 
     tools {
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                git branch: 'main',
-               url: 'https://github.com/chinni4321/apache2.git'
+               url: 'https://github.com/sowmya2506/apache1.git'
             }
 
         }
@@ -24,7 +24,7 @@ pipeline {
                 // Get some code from a GitHub repository
                 sh  '''
                   cd $WORKSPACE
-                  aws s3 sync . s3://prashanth41234154
+                  aws s3 sync . s3://sowmya-2506
                   '''
 
             }
