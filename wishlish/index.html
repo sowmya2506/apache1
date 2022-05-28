@@ -5,12 +5,31 @@
   </head>
   <body>
     <form autocomplete="off">
+	<div style="background-color:blue; color:white; padding:20px;">
+	  <div align="center", class="section">
+		<h1><span>Welcome to my Webpage</span></h1>
+		<svg class="face" height="100" width="100">
+			<circle cx="50" cy="50" r="50" fill="#FED835"/>
+			<circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
+			<circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
+		    <circle cx="30" cy="30" r="5" fill="#000000"/>
+			<circle cx="70" cy="30" r="5" fill="#FFFFFF"/>
+			<path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
+			
+			</svg>
+		</div>
+	
+   	  <label for="text">Username: </label>
+      <input name="text" name="username" required />
+	  <label for="text">Password: </label>
+      <input name="password" type="text" required />
       <label for="e-mail">Your e-mail address: </label>
       <input name="Email" type="text" required />
       <label for="date">Date: </label>
-      <input name="date" value="Date" required />
+      <input name="date" type="Date" required />
       <label for="tel">Telephone no:</label>
       <input name="tel" type="text" required />
+	  </div>
       <hr>
       <input name="submit" type="Submit" required />
     <div class="card">SUBSCRIBE</div>
