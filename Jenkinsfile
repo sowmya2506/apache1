@@ -5,7 +5,7 @@ pipeline {
 
     tools {
     jdk 'Java8'
-    maven 'Maven3.3.9'
+    maven 'Maven3.6.3'
 
   }
 
@@ -24,7 +24,7 @@ pipeline {
                 // Get some code from a GitHub repository
                 sh  '''
                   cd $WORKSPACE
-                  aws s3 sync . s3://sowmya-2506
+                  aws s3 sync . s3://sowmya-2595
                   '''
 
             }
